@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>攻略分类 - GameGuideHub</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">🎮 <span>GameGuide</span>Hub</a>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">首页</a>
+                <a href="categories.html">攻略分类</a>
+                <a href="all-guides.html">全部攻略</a>
+                <a href="about.html">关于</a>
+            </div>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="搜索攻略..." onkeyup="searchGuides(event)">
+                <span class="search-icon">🔍</span>
+            </div>
+            <button class="mobile-menu" onclick="toggleMenu()">☰</button>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <div class="container">
+            <h1>📂 攻略分类</h1>
+            <p>涵盖十大热门游戏类型，快速找到你需要的攻略</p>
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            <div class="categories-grid">
+                <div class="cat-card" onclick="location.href='all-guides.html?cat=beginner'">
+                    <span class="icon">🌱</span>
+                    <h3>入门指南</h3>
+                    <p>新手必读的基础知识与入门技巧</p>
+                    <span class="count">8 篇攻略</span>
+                </div>
+                <div class="cat-card" onclick="location.href='all-guides.html?cat=rpg'">
+                    <span class="icon">⚔️</span>
+                    <h3>RPG角色扮演</h3>
+                    <p>畅游奇幻世界的角色扮演攻略</p>
+                    <span class="count">8 篇攻略</span>
+                </div>
+                <div class="cat-card" onclick="location.href='all-guides.html?cat=action'">
+                    <span class="icon">🎯</span>
+                    <h3>动作冒险</h3>
+                    <p>肾上腺素飙升的动作游戏指南</p>
+                    <span class="count">8 篇攻略</span>
+                </div>
+                <div class="cat-card" onclick="location.href='all-guides.html?cat=fps'">
+                    <span class="icon">🔫</span>
+                    <h3>FPS射击</h3>
+                    <p>枪林弹雨中的生存射击攻略</p>
+                    <span class="count">8 篇攻略</span>
+                </div>
+                <div class="cat-card" onclick="location.href='all-guides.html?cat=openworld'">
+                    <span class="icon">🌍</span>
+                    <h3>开放世界</h3>
+                    <p>探索广袤开放世界的冒险指南</p>
+                    <span class="count">8 篇攻略</span>
+                </div>
+                <div class="cat-card" onclick="location.href='all-guides.html?cat=survival'">
+                    <span class="icon">🏕️</span>
+                    <h3>生存建造</h3>
+                    <p>荒野求生的建造与生存技巧</p>
+                    <span class="count">8 篇攻略</span>
+                </div>
+                <div class="cat-card" onclick="location.href='all-guides.html?cat=strategy'">
+                    <span class="icon">🧠</span>
+                    <h3>策略战术</h3>
+                    <p>运筹帷幄的策略游戏攻略</p>
+                    <span class="count">8 篇攻略</span>
+                </div>
+                <div class="cat-card" onclick="location.href='all-guides.html?cat=multiplayer'">
+                    <span class="icon">👥</span>
+                    <h3>多人联机</h3>
+                    <p>团队协作与竞技对战攻略</p>
+                    <span class="count">8 篇攻略</span>
+                </div>
+                <div class="cat-card" onclick="location.href='all-guides.html?cat=boss'">
+                    <span class="icon">🐉</span>
+                    <h3>Boss战攻略</h3>
+                    <p>硬核Boss战机制与打法详解</p>
+                    <span class="count">8 篇攻略</span>
+                </div>
+                <div class="cat-card" onclick="location.href='all-guides.html?cat=achievement'">
+                    <span class="icon">🏆</span>
+                    <h3>成就收集</h3>
+                    <p>全成就/全收集达成指南</p>
+                    <span class="count">8 篇攻略</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>🎮 GameGuideHub</h3>
+                    <p>全球热门游戏攻略大全，一站式查阅所有游戏技巧与攻略。</p>
+                </div>
+                <div class="footer-col">
+                    <h4>快速导航</h4>
+                    <a href="index.html">首页</a>
+                    <a href="categories.html">攻略分类</a>
+                    <a href="all-guides.html">全部攻略</a>
+                </div>
+                <div class="footer-col">
+                    <h4>热门分类</h4>
+                    <a href="all-guides.html?cat=rpg">RPG攻略</a>
+                    <a href="all-guides.html?cat=fps">FPS攻略</a>
+                    <a href="all-guides.html?cat=openworld">开放世界</a>
+                    <a href="all-guides.html?cat=beginner">入门指南</a>
+                </div>
+                <div class="footer-col">
+                    <h4>关于</h4>
+                    <a href="about.html">关于本站</a>
+                    <p class="footer-note">攻略内容由 AI 精心生成<br>仅供参考学习使用</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 GameGuideHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/data-part2.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

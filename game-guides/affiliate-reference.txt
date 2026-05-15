@@ -1,0 +1,31 @@
+# Affiliate Link Template Reference
+
+Replace the placeholder URLs with your real affiliate links.
+
+Amazon affiliate: add ?tag=YOUR_TAG at the end of any Amazon URL
+Steam partner: https://partner.steamgames.com/ -> get your affiliate link
+
+rpg-01: https://store.steampowered.com/app/1245620/ELDEN_RING/ | Amazon: 艾尔登法环 攻略 书
+rpg-02: https://store.steampowered.com/app/1086940/Baldurs_Gate_3/ | Amazon: 博德之门3 攻略
+rpg-03: https://store.steampowered.com/app/489830/The_Elder_Scrolls_V_Skyrim_Special_Edition/ | Amazon: 上古卷轴5 天际 攻略
+rpg-04: https://store.steampowered.com/app/374320/Dark_Souls_III/ | Amazon: 黑暗之魂3 攻略
+rpg-06: https://store.steampowered.com/app/292030/The_Witcher_3_Wild_Hunt/ | Amazon: 巫师3 狂猎 攻略
+rpg-07: https://store.steampowered.com/app/1091500/Cyberpunk_2077/ | Amazon: 赛博朋克2077 攻略
+action-01: https://store.steampowered.com/app/814380/Sekiro_Shadows_Die_Twice/ | Amazon: 只狼 影逝二度
+action-02: https://store.steampowered.com/app/2322010/God_of_War_Ragnark/ | Amazon: 战神 诸神黄昏
+action-05: https://store.steampowered.com/app/367520/Hollow_Knight/ | Amazon: 空洞骑士 攻略
+action-07: https://store.steampowered.com/app/2458780/The_Legend_of_Zelda_Tears_of_the_Kingdom/ | Amazon: 塞尔达 王国之泪
+fps-01: https://playvalorant.com/ | Amazon: Valorant 鼠标 推荐
+fps-02: https://store.steampowered.com/app/578080/PUBG_Battlegrounds/ | Amazon: 绝地求生 攻略
+fps-03: https://store.steampowered.com/app/730/CounterStrike_2/ | Amazon: CS2 鼠标 推荐
+fps-05: https://store.steampowered.com/app/1172470/Apex_Legends/ | Amazon: Apex英雄 耳机
+openworld-01: https://hoyolab.com/ | Amazon: 原神 攻略 书
+openworld-04: https://store.steampowered.com/app/377160/Fallout_4/ | Amazon: 辐射4 攻略
+survival-01: https://www.minecraft.net/ | Amazon: 我的世界 攻略
+survival-07: https://store.steampowered.com/app/264710/Subnautica/ | Amazon: 深海迷航 攻略
+strategy-01: https://store.steampowered.com/app/289070/Sid_Meiers_Civilization_VI/ | Amazon: 文明6 攻略
+strategy-02: https://store.steampowered.com/app/573220/StarCraft_II/ | Amazon: 星际争霸2
+multiplayer-03: https://www.leagueoflegends.com/ | Amazon: 英雄联盟 鼠标
+multiplayer-06: https://worldofwarcraft.com/ | Amazon: 魔兽世界 攻略
+multiplayer-08: https://store.steampowered.com/app/1364780/Street_Fighter_6/ | Amazon: 街霸6 攻略
+boss-01: https://store.steampowered.com/app/1245620/ELDEN_RING/ | Amazon: 艾尔登法环 DLC

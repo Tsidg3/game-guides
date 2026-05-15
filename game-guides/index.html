@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GameGuideHub - 全球游戏攻略大全</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav class="navbar"><div class="container">
+  <a href="index.html" class="logo">🎮 <span>GameGuide</span>Hub</a>
+  <div class="nav-links" id="navLinks">
+    <a href="index.html">首页</a>
+    <a href="categories.html">攻略分类</a>
+    <a href="all-guides.html">全部攻略</a>
+    <a href="about.html">关于</a>
+  </div>
+  <div class="search-box"><input type="text" id="sbox" onkeyup="if(event.key==='Enter'&&this.value.trim())window.location='all-guides.html?search='+encodeURIComponent(this.value.trim())" placeholder="搜索攻略..."><span class="search-icon">🔍</span></div>
+  <button class="mobile-menu" onclick="toggleMenu()">☰</button>
+</div></nav>
+
+<section class="hero"><div class="container">
+  <div class="hero-content">
+    <h1>🎯 全球热门游戏 <span class="gradient-text">攻略大全</span></h1>
+    <p>收录 80 篇精品攻略，覆盖十大游戏分类</p>
+    <div class="hero-stats">
+      <div class="stat"><span class="num">80</span><span class="label">攻略总数</span></div>
+      <div class="stat"><span class="num">10</span><span class="label">游戏分类</span></div>
+      <div class="stat"><span class="num">100%</span><span class="label">免费阅读</span></div>
+    </div>
+  </div>
+</div></section>
+
+<section class="section"><div class="container">
+  <h2 class="section-title">📂 攻略分类</h2>
+  <div class="categories-grid">  <div class="cat-card" onclick="window.location.href='all-guides.html?cat=beginner'">
+    <span class="icon">🌱</span>
+    <h3>入门指南</h3>
+    <p>8 篇攻略</p>
+    <span class="count">8 篇</span>
+  </div>  <div class="cat-card" onclick="window.location.href='all-guides.html?cat=rpg'">
+    <span class="icon">⚔️</span>
+    <h3>RPG角色扮演</h3>
+    <p>8 篇攻略</p>
+    <span class="count">8 篇</span>
+  </div>  <div class="cat-card" onclick="window.location.href='all-guides.html?cat=action'">
+    <span class="icon">🎯</span>
+    <h3>动作冒险</h3>
+    <p>8 篇攻略</p>
+    <span class="count">8 篇</span>
+  </div>  <div class="cat-card" onclick="window.location.href='all-guides.html?cat=fps'">
+    <span class="icon">🔫</span>
+    <h3>FPS射击</h3>
+    <p>8 篇攻略</p>
+    <span class="count">8 篇</span>
+  </div>  <div class="cat-card" onclick="window.location.href='all-guides.html?cat=openworld'">
+    <span class="icon">🌍</span>
+    <h3>开放世界</h3>
+    <p>8 篇攻略</p>
+    <span class="count">8 篇</span>
+  </div>  <div class="cat-card" onclick="window.location.href='all-guides.html?cat=survival'">
+    <span class="icon">🏕️</span>
+    <h3>生存建造</h3>
+    <p>8 篇攻略</p>
+    <span class="count">8 篇</span>
+  </div>  <div class="cat-card" onclick="window.location.href='all-guides.html?cat=strategy'">
+    <span class="icon">🧠</span>
+    <h3>策略战术</h3>
+    <p>8 篇攻略</p>
+    <span class="count">8 篇</span>
+  </div>  <div class="cat-card" onclick="window.location.href='all-guides.html?cat=multiplayer'">
+    <span class="icon">👥</span>
+    <h3>多人联机</h3>
+    <p>8 篇攻略</p>
+    <span class="count">8 篇</span>
+  </div>  <div class="cat-card" onclick="window.location.href='all-guides.html?cat=boss'">
+    <span class="icon">🐉</span>
+    <h3>Boss战攻略</h3>
+    <p>8 篇攻略</p>
+    <span class="count">8 篇</span>
+  </div>  <div class="cat-card" onclick="window.location.href='all-guides.html?cat=achievement'">
+    <span class="icon">🏆</span>
+    <h3>成就收集</h3>
+    <p>8 篇攻略</p>
+    <span class="count">8 篇</span>
+  </div></div>
+</div></section>
+
+<section class="section"><div class="container">
+  <h2 class="section-title">⭐ 精选攻略</h2>
+  <p class="section-subtitle">不容错过的精华内容</p>
+  <div class="guides-grid">
+    <div class="guide-card">
+      <span class="tag tag-achievement">成就收集</span>
+      <h3><a href="guides/detail/achievement-01.html">《艾尔登法环》全成就达成指南</a></h3>
+      <p>42个Steam成就的完整解锁指南，涵盖全追忆、全传说装备与全结局。</p>
+    </div>
+    <div class="guide-card">
+      <span class="tag tag-achievement">成就收集</span>
+      <h3><a href="guides/detail/achievement-04.html">《只狼》白金奖杯全收集路线</a></h3>
+      <p>全技能、全忍义手、全佛珠与全结局的奖杯规划，刷经验最佳路线。</p>
+    </div>
+    <div class="guide-card">
+      <span class="tag tag-action">动作冒险</span>
+      <h3><a href="guides/detail/action-01.html">《只狼：影逝二度》完美格挡与战斗系统深度解析</a></h3>
+      <p>从白给到天下无敌，拼刀的艺术完全教学，所有Boss速通打法。</p>
+    </div>
+    <div class="guide-card">
+      <span class="tag tag-rpg">RPG角色扮演</span>
+      <h3><a href="guides/detail/rpg-01.html">《艾尔登法环》新手入门完全攻略</a></h3>
+      <p>褪色者必备的入门技巧，从职业选择到初期路线规划，让你少走弯路。</p>
+    </div>
+    <div class="guide-card">
+      <span class="tag tag-boss">Boss战攻略</span>
+      <h3><a href="guides/detail/boss-01.html">《艾尔登法环》全追忆Boss无伤攻略</a></h3>
+      <p>女武神、拉达冈、艾尔登之兽等15个追忆Boss的详细机制与无���打法。</p>
+    </div>
+    <div class="guide-card">
+      <span class="tag tag-fps">FPS射击</span>
+      <h3><a href="guides/detail/fps-02.html">《绝地求生》战术与枪法进阶攻略</a></h3>
+      <p>从跳伞到吃鸡的完整战术体系，枪械搭配与后坐力控制教程。</p>
+    </div>
+  </div>
+</div></section>
+
+<footer class="footer"><div class="container">
+  <div class="footer-grid">
+    <div class="footer-col"><h3>🎮 GameGuideHub</h3><p>全球热门游戏攻略大全</p></div>
+    <div class="footer-col"><h4>快速导航</h4><a href="index.html">首页</a><a href="categories.html">攻略分类</a><a href="all-guides.html">全部攻略</a></div>
+    <div class="footer-col"><h4>关于</h4><a href="about.html">关于本站</a></div>
+  </div>
+  <div class="footer-bottom"><p>&copy; 2025 GameGuideHub</p></div>
+</div></footer>
+<script src="js/main.js"></script>
+</body>
+</html>
