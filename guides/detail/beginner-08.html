@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>游戏串流完全指南：随时随地玩PC游戏 | GameGuideHub</title>
+    <meta name="description" content="Steam Link、Moonlight、Parsec等串流方案设置教程，远程游戏不再有门槛�?>
+    <meta name="keywords" content="串流, 远程">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://ningbo.github.io/guides/detail/beginner-08.html">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <meta property="og:title" content="游戏串流完全指南：随时随地玩PC游戏 | GameGuideHub">
+    <meta property="og:description" content="Steam Link、Moonlight、Parsec等串流方案设置教程，远程游戏不再有门槛�?>
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="GameGuideHub">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="../../index.html" class="logo">🎮 <span>GameGuide</span>Hub</a>
+            <div class="nav-links" id="navLinks">
+                <a href="../../index.html">首页</a>
+                <a href="../../categories.html">攻略分类</a>
+                <a href="../../all-guides.html">全部攻略</a>
+                <a href="../../about.html">关于</a>
+            </div>
+            <div class="search-box">
+                <input type="text" onkeyup="if(event.key==='Enter'&&this.value.trim())window.location.href='../../all-guides.html?search='+encodeURIComponent(this.value.trim())" placeholder="搜索攻略...">
+                <span class="search-icon">🔍</span>
+            </div>
+            <button class="mobile-menu" onclick="document.getElementById('navLinks').classList.toggle('show')">�?/button>
+        </div>
+    </nav>
+
+    <section class="guide-detail">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../../index.html">首页</a> &gt;
+                <a href="../../categories.html">攻略分类</a> &gt;
+                <a href="../../all-guides.html?cat=beginner">入门指南</a> &gt;
+                游戏串流完全指南：随时随地玩PC游戏
+            </div>
+            <article>
+                <h1>游戏串流完全指南：随时随地玩PC游戏</h1>
+                <div class="guide-meta">
+                    <span>📅 2025-01-25</span>
+                    <span>🏷�?串流、远�?/span>
+                    <span>📂 入门指南</span>
+                </div>
+                <div class="guide-body">
+                    
+<h2>📡 游戏串流完全指南</h2>
+<p>把你的PC游戏串流到笔记本、手机、平板甚至电视上——这是现代玩家的必备技能�?/p>
+
+<h3>主流串流方案对比</h3>
+<table>
+<tr><th>方案</th><th>延迟</th><th>画质</th><th>配置难度</th><th>价格</th></tr>
+<tr><td>Steam Link</td><td>�?/td><td>�?/td><td>简�?/td><td>免费</td></tr>
+<tr><td>Moonlight + Sunshine</td><td>极低</td><td>极好</td><td>中等</td><td>免费</td></tr>
+<tr><td>Parsec</td><td>极低</td><td>极好</td><td>简�?/td><td>免费/付费</td></tr>
+<tr><td>GeForce Now</td><td>中等</td><td>�?/td><td>简�?/td><td>订阅�?/td></tr>
+<tr><td>Xbox Cloud Gaming</td><td>中等</td><td>中等</td><td>最简�?/td><td>Game Pass</td></tr>
+</table>
+
+<h3>最佳方案推荐：Moonlight + Sunshine</h3>
+<p>这是目前延迟最低、画质最好的自托管串流方案：</p>
+<ul>
+<li>PC端安装Sunshine（开源串流服务器�?/li>
+<li>客户端安装Moonlight（支持Windows/Mac/Android/iOS/电视�?/li>
+<li>局域网内延迟通常�?-10ms�?G网络下远程串流延�?0-40ms</li>
+<li>支持HDR�?K 60fps、环绕声、多显示�?/li>
+</ul>
+
+<h3>串流优化小技�?/h3>
+<ul>
+<li>编码优先选HEVC（H.265），同等画质下带宽需求比H.264�?0%</li>
+<li>码率设置：局域网建议50-100Mbps，远程根据上行带宽设�?/li>
+<li>使用有线网络连接客户端和主机，Wi-Fi使用5GHz</li>
+</ul>
+
+                                        <h2>📚 深度扩展：更多实用技�?/h2>
+<h3>🖥�?Sunshine串流服务器配置详�?/h3>
+<p>Sunshine是目前最优秀的开源串流服务器，安装后需要在Web管理页面（默�?code>http://localhost:47990</code>）进行关键配置。在"Configuration"页面中，�?Encoder"设为NVENC H.264（N卡）或AMF（A卡）——NVENC编码延迟最低，A卡AMF的编码质量更佳但延迟略高。分辨率建议设为2560×1440@"60 fps"�?Bitrate"设为35000-50000 Kbps。最容易被忽视的�?Advanced"选项卡中�?QP"值——设�?8-22可以在有限带宽内获得最佳画质。别忘了�?Applications"标签中添加游戏路径，否则Moonlight客户端只会显示桌面�?/p>
+<h3>📱 iOS/Android客户端设置技�?/h3>
+<p>Moonlight在手机端的体验取决于正确的触控映射。在Android端，推荐使用"Gamepad + Touch"模式，将右侧屏幕映射为右摇杆（用于视角控制），左侧为虚拟摇杆（用于移动）。在iOS 16+系统上，PS5和Xbox手柄可以正常工作，连接后在Moonlight中启�?Optimize Gamepad Settings"可以减少蓝牙手柄的输入延迟。对于iPad Pro用户，使用USB-C直连手柄（有线模式）比蓝牙延迟降�?0-50%，打《APEX英雄》完全没有手感差异。iPhone 15 Pro及以上型号支持通过Thunderbolt接口直连千兆网卡，实现有线串流——延迟可以控制在5ms以内�?/p>
+<h3>📶 公网串流安全配置</h3>
+<p>远程串流时安全性不容忽视。Sunshine默认使用自签名SSL证书，建议替换为Let's Encrypt免费证书。不要在路由器上直接暴露Sunshine的端口（47989-47990），而是通过Tailscale或ZeroTier组建虚拟局域网——Tailscale基于WireGuard加密，配置只需�?步：两台设备都安装Tailscale并登录相同账号，然后在Moonlight中直接输入Tailscale分配的虚拟IP地址。这套方案比端口转发安全一个数量级，且不需要公网IP。另外，远程串流时建议在Sunshine中设置开机密码验证，防止他人通过Moonlight直接控制你的电脑�?/p>
+<h3>🔄 常见串流方案的优缺点排雷</h3>
+<p>GeForce Now�?025年的体验有了质的飞跃，但仍有几个硬伤：免费队列等待时间通常15-30分钟、游戏库仅限已购买且支持该平台的游戏（部分发行商如动视暴雪和贝塞斯达的游戏不支持）、没有MOD支持。Xbox Cloud Gaming的优势在于Game Pass库中包含大量首发游戏，但画质最高只�?080p 60fps且延迟在30-50ms（受网络影响大）。自建串流中，Steam Link的客户端优化较好（Android TV端支持HDR），但远程串流需要通过Steam自家的网关转发，延迟比Sunshine+Moonlight高约20ms。Parsec在低延迟方面表现最好（局域网3ms以内），但其开发者Focus于企业远程桌面业务后游戏串流的更新频率大幅降低。综合来看，自用推荐Sunshine+Moonlight、跨平台推荐Parsec、不折腾推荐Steam Link�?/p>
+
+                    <h2>⚠️ 避坑指南：串流配置别踩的�?/h2>
+<ul>
+<li><strong>Wi-Fi串流忽略干扰�?/strong>2.4GHz频段干扰极大，串流必须用5GHz或Wi-Fi 6，且确保客户端和主机都连5GHz�?/li>
+<li><strong>误解"带宽"概念�?/strong>局域网串流瓶颈通常是Wi-Fi信号质量而非带宽�?00Mbps就足�?K串流�?/li>
+<li><strong>忽视解码能力�?/strong>客户端解码能力决定串流画质。Apple TV/NVIDIA Shield是最好的串流客户端，低端安卓盒子解码能力差�?/li>
+<li><strong>远程串流不设限：</strong>公共Wi-Fi上远程串流会消耗大量流量，注意流量限制�?K串流每小时约15-25GB�?/li>
+</ul>
+                </div>
+                <hr style="margin:40px 0; border-color:rgba(255,255,255,0.06);">
+                <p style="text-align:center;color:#5a6270;">
+                    📖 <a href="../../all-guides.html">返回全部攻略</a> &nbsp;|&nbsp; 
+                    📂 <a href="../../all-guides.html?cat=beginner">查看入门指南攻略</a>
+                </p>
+            </article>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>🎮 GameGuideHub</h3>
+                    <p>全球热门游戏攻略大全，一站式查阅所有游戏技巧与攻略�?/p>
+                </div>
+                <div class="footer-col">
+                    <h4>快速导�?/h4>
+                    <a href="../../index.html">首页</a>
+                    <a href="../../categories.html">攻略分类</a>
+                    <a href="../../all-guides.html">全部攻略</a>
+                </div>
+                <div class="footer-col">
+                    <h4>热门分类</h4>
+                    <a href="../../all-guides.html?cat=rpg">RPG攻略</a>
+                    <a href="../../all-guides.html?cat=fps">FPS攻略</a>
+                    <a href="../../all-guides.html?cat=openworld">开放世�?/a>
+                    <a href="../../all-guides.html?cat=beginner">入门指南</a>
+                </div>
+                <div class="footer-col">
+                    <h4>关于</h4>
+                    <a href="../../about.html">关于本站</a>
+                    <p class="footer-note">攻略内容�?AI 精心生成<br>仅供参考学习用�?/p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 GameGuideHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
