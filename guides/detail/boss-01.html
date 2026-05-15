@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>《艾尔登法环》全追忆Boss无伤攻略 | GameGuideHub</title>
-    <meta name="description" content="女武神、拉达冈、艾尔登之兽。5个追忆Boss的详细机制与无伤打法。>
-    <meta name="keywords" content="Boss, 艾尔登法。>
+    <meta name="description" content="《艾尔登法环》全追忆Boss无伤攻略，从女武神到艾尔登之兽，详解每个Boss的核心机制、无伤走位和推荐配装。">
+    <meta name="keywords" content="Boss, 战斗">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://ningbo.github.io/guides/detail/boss-01.html">
     <link rel="stylesheet" href="../../css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <meta property="og:title" content="《艾尔登法环》全追忆Boss无伤攻略 | GameGuideHub">
-    <meta property="og:description" content="女武神、拉达冈、艾尔登之兽。5个追忆Boss的详细机制与无伤打法。>
+    <meta property="og:description" content="《艾尔登法环》全追忆Boss无伤攻略，从女武神到艾尔登之兽，详解每个Boss的核心机制、无伤走位和推荐配装。">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="GameGuideHub">
 </head>
@@ -26,92 +25,120 @@
                 <a href="../../about.html">关于</a>
             </div>
             <div class="search-box">
-                <input type="text" onkeyup="if(event.key==='Enter'&&this.value.trim())window.location.href='../../all-guides.html?search='+encodeURIComponent(this.value.trim())" placeholder="搜索攻略...">
+                <input type="text" id="searchInput" placeholder="搜索攻略..." onkeyup="searchGuides(event)">
                 <span class="search-icon">🔍</span>
             </div>
-            <button class="mobile-menu" onclick="document.getElementById('navLinks').classList.toggle('show')">☰</button>
+            <button class="mobile-menu" onclick="toggleMenu()">☰</button>
         </div>
     </nav>
 
-    <section class="guide-detail">
+    <div class="guide-detail">
         <div class="container">
-            <div class="breadcrumb">
-                <a href="../../index.html">首页</a> &gt;
-                <a href="../../categories.html">攻略分类</a> &gt;
-                <a href="../../all-guides.html?cat=boss">Boss战攻略/a> &gt;
-                《艾尔登法环》全追忆Boss无伤攻略
-            </div>
             <article>
+                <div class="breadcrumb">
+                    <a href="../../index.html">首页</a> &raquo; <a href="../../all-guides.html">全部攻略</a> &raquo; <span>《艾尔登法环》全追忆Boss无伤攻略</span>
+                </div>
                 <h1>《艾尔登法环》全追忆Boss无伤攻略</h1>
                 <div class="guide-meta">
-                    <span>📅 2025-04-16</span>
-                    <span>🏷️ Boss、艾尔登法环</span>
-                    <span>📂 Boss战攻略/span>
+                    <span>📅 2025-01-05</span>
+                    <span>🏷️ Boss、战斗</span>
+                    <span>📂 Boss战攻略</span>
                 </div>
                 <div class="guide-body">
-                    
-<h2>🐉 《艾尔登法环》全Boss攻略</h2>
 
-<h3>女武神玛莲妮亚（Malenia, Blade of Miquella。/h3>
-<p>女武神被认为是FromSoftware史上最难Boss之一。/p>
+<h2>《艾尔登法环》全追忆Boss无伤攻略总览</h2>
+
+<p>《艾尔登法环》中共有15个追忆Boss，每个都拥有独特的战斗机制和极高的伤害输出。要实现无伤击杀，不仅需要对Boss的每一招都有深刻理解，更需要精准的操作和合理的配装。本攻略将为你详细拆解每个追忆Boss的核心机制与无伤打法。</p>
+
+<h2>基础准备：无伤挑战的必备条件</h2>
+
+<p>在挑战任何追忆Boss之前，建议做好以下准备：</p>
+
 <ul>
-<li><strong>核心机制。/strong>水鸟乱舞（Waterfowl Dance）——当Boss血量降低到75%/50%/25%时触发。应对方法是：当她升空时向远处跑，第一段飞行后向前翻滚，第二段向Boss方向翻滚</li>
-<li><strong>核心机制2。/strong>攻击回血——每次击中玩家回血。所以不能用"换血"打法，必须无伤躲。/li>
-<li><strong>推荐打法。/strong>使用"猎犬长牙"等削韧高的武器，配合"仿身泪滴"骨灰吸引仇恨</li>
-<li><strong>阶段2。/strong>猩红艾奥尼亚（Scarlet Aeonia）——当她插地时向侧后方奔跑躲开花瓣范围</li>
+<li><strong>等级建议：</strong>120级以上，主加生命至少40点，确保不被秒杀的同时留有容错空间</li>
+<li><strong>护符选择：</strong>绿龟护符（加快精力回复）+ 大壶众武护符（增加负重）+ 龙徽大盾护符（大幅减伤）这三件是通用核心。根据Boss属性再换上一个对应的属性减伤护符</li>
+<li><strong>灵药配置：</strong>"涌绿结晶露滴"（无限精力15秒）+ "带破甲结晶露滴"（大幅增伤），前者用于规避水鸟乱舞等复杂连招，后者用于输出窗口</li>
+<li><strong>武器选择：</strong>出血/冻伤类武器（如尸山血海、双头刀）对大部分Boss有奇效。削韧高的武器（巨剑、大锤）适合需要频繁打出硬直的Boss</li>
+<li><strong>骨灰推荐：</strong>"仿身泪滴"（+10）是万用选择，可以吸引仇恨、分担伤害。"黑刀狄希"（+10）输出更高但身板脆</li>
 </ul>
 
-<h3>拉达冈（Radagon of the Golden Order。/h3>
-<p>最终Boss第一形态：</p>
+<h2>女武神·玛莲妮亚（Malenia, Blade of Miquella）</h2>
+
+<p>被称为FromSoftware史上最难Boss之一，也是无伤挑战中最棘手的对手。玛莲妮亚的核心难点在于：</p>
+
 <ul>
-<li>近战重击有大的范围延迟——需要数节奏翻滚</li>
-<li>雷电锤的远程AOE——横向移动躲。/li>
-<li>灵魂激流最后会有大爆炸——看到蓄力就跑出范围</li>
-<li>弱点：打击类武器（战斗大锤）对拉达冈有额外伤害</li>
+<li><strong>水鸟乱舞（Waterfowl Dance）：</strong>当她血量降低到75%/50%/25%时必定触发。应对方法是——她升空时立刻向远处跑，第一段飞行后向前翻滚躲过第二段，然后转向Boss方向翻滚躲避第三段。如果距离足够远，只需向外跑即可完全躲开</li>
+<li><strong>攻击回血机制：</strong>每次击中玩家都会为Boss回复少量血量。这意味着"换血"打法完全不成立——你必须尽可能地无伤躲避每一招</li>
+<li><strong>阶段2 · 猩红艾奥尼亚（Scarlet Aeonia）：</strong>玛莲妮亚升空后将自身化作猩红花苞砸向地面，产生巨大的猩红腐败范围。看到插地动作后向侧后方奔跑即可躲开花瓣范围，然后趁她硬直时全力输出</li>
+<li><strong>逃课方案（半无伤）：</strong>使用"猎犬长牙"或"粉碎巨人锤"等高削韧武器配合"仿身泪滴"骨灰——两人一起攻击可以让玛莲妮亚几乎全程处于硬直状态，大幅降低水鸟乱舞的威胁</li>
 </ul>
 
-<h3>艾尔登之兽（Elden Beast。/h3>
-<p>最终Boss第二形态——在一个巨大的水面上战斗：</p>
+<h2>拉达冈（Radagon of the Golden Order）</h2>
+
+<p>最终Boss战的第一形态，以高伤害的雷属性攻击为主：</p>
+
 <ul>
-<li>躲避"金色追踪。的方法：带着弹绕大跑，它们会逐渐消失</li>
-<li>当Boss潜入水中时——立刻朝侧方向跑，它会从你脚下冲。/li>
-<li>使用"圣属性减伤护。（Haligdrake Talisman+2）大幅降低受到的圣属性伤。/li>
-<li>追踪月光剑连斩——最好的方法是向后连续翻。-5次完全脱离范。/li>
+<li><strong>近战重击：</strong>拉达冈的锤子攻击有大范围的延迟判定——他的起手很快但落下很慢，需要数节奏而不是凭直觉翻滚。等他锤子即将落地时翻滚</li>
+<li><strong>雷电锤远程AOE：</strong>他将雷锤插入地面释放雷电波——横向跑动即可轻松躲避，注意不要向后跑因为雷电波的速度比你后撤快</li>
+<li><strong>灵魂激流：</strong>拉达冈召唤金色灵魂碎片组成洪流攻击，最后有一发大爆炸——看到蓄力动作提前跑出范围，不要贪输出</li>
+<li><strong>弱点：</strong>打击类武器（战锤、大锤、特大锤）对拉达冈有额外伤害加成。推荐使用"巨型锤"或"星兽半颚"</li>
 </ul>
 
-                                        <h2>📚 深度扩展：更多实用技巧/h2>
-<h3>⚔️ 女武神水鸟乱舞的精准闪避拆解</h3>
-<p>玛莲妮亚的水鸟乱舞（Waterfowl Dance）是艾尔登法环中最难应对的单次技能，但这招的闪避方法是完全固定的不第一阶段：当她升空并展开翅膀的瞬间，立即向远处直线奔跑（不要翻滚）——此时第一波斩击的判定范围约为身前15米。第二阶段：第一波结束后会有。.5秒的停顿，此时向她飞来的方向向前翻滚一次——二段斩击的判定主要在贴身距离。第三阶段：落地前最后一波是范围AOE，需要在落地瞬间向Boss的左侧（非持剑的一侧）翻滚。唯一需要使用盾牌硬挡的不水鸟乱舞"的贴脸起始——如果你恰好在她升空时站在她脸前，来不跑开的话，用指纹石盾。25。 大盾护符硬吃第一波伤害，然后趁停顿翻滚逃脱。/p>
-<h3>💎 全追忆Boss属性弱点与抗性表</h3>
-<p>了解每个追忆Boss的属性抗性是优化伤害的关键：玛莲妮亚弱出血、弱火，对圣属性和。猩红腐败有抗性（猩红腐败伤害减半）。拉达冈弱打击，对各属性魔法抗性很高（魔法、火、雷、圣皆减。0%），但物理打击伤害正常。艾尔登之兽弱物理（斩击除外），圣属性抗性高。0%——用圣属性打它就是自断一臂。蒙葛特（Morgott）弱打击和雷，对魔法和圣有中等抗性。龙王普拉顿桑克斯（Placidusax）弱穿刺和雷，对圣有高抗性，头部受到的伤害是身体部位。倍。荷莱·露（Hoarah Loux）弱出血，对魔法抗性较高，P2（变身为摔跤手形态）时体崩值大幅降低，需要更。削韧"攻击才能打出硬直。/p>
-<h3>🛡。一二周目加点策略对。/h3>
-<p>一周目推荐。50级前完成全追忆Boss挑战斗加点优先级：生。0点→集中。0→耐力25→主属性（。。。信任选）。0→生。0→副属性。二周目（NG+）的Boss血量提升约50%，但玩家的加点优势可以弥补。到了NG+3左右Boss血量翻倍，这时候只。水桶。（全属。9）已经不够了，需要针对具体Boss配装——例如打女武神时。血王矛"（Moghwyn's Sacred Spear）的战技"血之赐。、带。腐败翼剑徽章"+"米莉森的义手"连击增伤，配置鲜血君王的欢。触发出血后攻击力提升，一套战技打满可以打出。000的出血伤害，直接带走P1。/p>
+<h2>艾尔登之兽（Elden Beast）</h2>
 
-                    <h2>⚠️ 避坑指南：艾尔登法环Boss战禁。/h2>
+<p>最终Boss的第二形态，在一个巨大的水面上进行战斗：</p>
+
 <ul>
-<li><strong>女武神水鸟乱舞硬吃：</strong>水鸟乱舞是女武神最高伤害技能，不是"反应够快就能力的不记住固定的闪避节奏。/li>
-<li><strong>最终Boss用错误属性：</strong>拉达冈对圣属性有80%的减伤率。带一个圣属性武器去打拉达冈=伤害少一半。/li>
-<li><strong>不调整护符应对Boss。/strong>面对不同Boss要换对应的护符。用打物理Boss的护符去打魔法的Boss，纯属自找苦吃。/li>
-<li><strong>在Boss房里换装备：</strong>进了雾门就别想着换装备了。进Boss房前确认好武器质变、护符和道具栏。/li>
+<li><strong>金色追踪弹：</strong>艾尔登之兽释放多个追踪光弹。应对方法是——带着光弹绕大圈跑，光弹飞行速度有限，跑圈过程中它们会逐渐消失</li>
+<li><strong>水下突袭：</strong>当Boss潜入水中时——立刻向侧方向直线跑，它会从你脚下冲出造成高额伤害。注意侧跑而不是后跑</li>
+<li><strong>圣属性减伤：</strong>推荐佩戴"圣龙徽护符+2"（Haligdrake Talisman+2），可以大幅降低受到的圣属性伤害——这是艾尔登之兽的主要伤害类型</li>
+<li><strong>追踪月光剑连斩：</strong>Boss在远处连续挥出巨大的月光剑波——最佳应对是向后连续翻滚4-5次，完全脱离攻击范围。如果翻滚方向不对会被连续击中</li>
+<li><strong>艾尔登流星：</strong>全场大范围的星光坠落——无法完全躲开，推荐提前上好"王之圣防护"祈祷或使用圣龙徽护符硬抗</li>
 </ul>
+
+<h2>其他重点追忆Boss速览</h2>
+
+<h3>碎星将军·拉塔恩（Starscourge Radahn）</h3>
+<ul>
+<li>开场立刻召唤NPC联军吸引仇恨。他的重力箭可以用骑马快速接近打断</li>
+<li>P2陨石坠落——看到拉塔恩消失在天边后立刻转身骑马全速跑，落点会有明显阴影</li>
+<li>近战注意他的重力魔法范围——始终保持在他身后攻击</li>
+</ul>
+
+<h3>蒙葛特（Morgott, the Omen King）</h3>
+<ul>
+<li>攻击节奏极快——他是快节奏战斗的典范。建议完全放弃盾牌，采用双持武器+翻滚的纯进攻策略</li>
+<li>他的幻影武器召唤有固定顺序——背下这个顺序后可以预判他的下一招</li>
+</ul>
+
+<h3>火焰巨人（Fire Giant）</h3>
+<ul>
+<li>P1攻击脚踝直到他倒下。P2打坏眼睛才是核心输出目标</li>
+<li>注意他的滚地攻击——朝他翻滚的方向反而安全</li>
+</ul>
+
+<h3>龙王·普拉顿桑克斯（Dragonlord Placidusax）</h3>
+<ul>
+<li>面对头部长枪攻击，面对尾部注意扫尾。他的金色雷电AOE需要提前拉开距离</li>
+<li>P2的隐身激光——看到雷电云位置来判断龙头所在</li>
+</ul>
+
+<h3>荷莱·露（Godfrey, First Elden Lord / Hoarah Loux）</h3>
+<ul>
+<li>P1注意他的踩地AOE——他抬脚后大约1秒落地，跳跃可以躲开冲击波</li>
+<li>P2变身为野蛮人形态后，突进技"擒抱"是他唯一的远程接近手段——可以预判翻滚</li>
+</ul>
+
+<blockquote>
+<p>无伤挑战的精髓不在于你有多强的反应速度，而在于你是否愿意花时间去背下每一招的起手和判定。当你不再紧张地翻滚，而是从容地"走"过每一道攻击时，你就真正理解了艾尔登法环的战斗美学。</p>
+</blockquote>
+
+<p>祝你无伤之旅顺利，成为真正的艾尔登之王！</p>
+
                 </div>
-                <div class="affiliate-links" style="margin-top:30px;padding:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;">
-  <h3 style="margin-top:0;">🛒 想玩这个游戏？</h3>
-  <p style="color:#8a92a2;font-size:0.9rem;">
-    <a href="https://store.steampowered.com/app/1245620/ELDEN_RING/" target="_blank" rel="noopener noreferrer" style="color:#6ecbf5;font-weight:600;">🎮 Steam 商店链接</a>
-    · <a href="https://www.amazon.com/s?k=%E8%89%BE%E5%B0%94%E7%99%BB%E6%B3%95%E7%8E%AF%20DLC" target="_blank" rel="noopener noreferrer" style="color:#6ecbf5;font-weight:600;">📚 Amazon 搜索 "艾尔登法环 DLC"</a>
-  </p>
-  <p style="color:#5a6270;font-size:0.75rem;margin-bottom:0;">📌 通过以上链接购买，我可以获得少量佣金（不影响你的购买价格）</p>
-</div>
-
-<hr style="margin:40px 0; border-color:rgba(255,255,255,0.06);">
-                <p style="text-align:center;color:#5a6270;">
-                    📖 <a href="../../all-guides.html">返回全部攻略</a> &nbsp;|&nbsp; 
-                    📂 <a href="../../all-guides.html?cat=boss">查看Boss战攻略攻略/a>
-                </p>
             </article>
         </div>
-    </section>
+    </div>
 
     <footer class="footer">
         <div class="container">
@@ -121,7 +148,7 @@
                     <p>全球热门游戏攻略大全，一站式查阅所有游戏技巧与攻略。</p>
                 </div>
                 <div class="footer-col">
-                    <h4>快速导。/h4>
+                    <h4>快速导航</h4>
                     <a href="../../index.html">首页</a>
                     <a href="../../categories.html">攻略分类</a>
                     <a href="../../all-guides.html">全部攻略</a>
@@ -130,13 +157,13 @@
                     <h4>热门分类</h4>
                     <a href="../../all-guides.html?cat=rpg">RPG攻略</a>
                     <a href="../../all-guides.html?cat=fps">FPS攻略</a>
-                    <a href="../../all-guides.html?cat=openworld">开放世界/a>
+                    <a href="../../all-guides.html?cat=openworld">开放世界</a>
                     <a href="../../all-guides.html?cat=beginner">入门指南</a>
                 </div>
                 <div class="footer-col">
                     <h4>关于</h4>
                     <a href="../../about.html">关于本站</a>
-                    <p class="footer-note">攻略内容AI 精心生成<br>仅供参考学习用。/p>
+                    <p class="footer-note">攻略内容由 AI 精心生成，仅供参考学习使用。</p>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -144,5 +171,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="../../js/main.js"></script>
 </body>
 </html>
