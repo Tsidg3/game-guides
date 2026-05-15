@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>游戏串流完全指南：随时随地玩PC游戏 | GameGuideHub</title>
-    <meta name="description" content="Steam Link、Moonlight、Parsec等串流方案设置教程，远程游戏不再有门槛。>
+    <meta name="description" content="Steam Link、Moonlight、Parsec等串流方案设置教程，远程游戏不再有门槛。">
     <meta name="keywords" content="串流, 远程">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://ningbo.github.io/guides/detail/beginner-08.html">
     <link rel="stylesheet" href="../../css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <meta property="og:title" content="游戏串流完全指南：随时随地玩PC游戏 | GameGuideHub">
-    <meta property="og:description" content="Steam Link、Moonlight、Parsec等串流方案设置教程，远程游戏不再有门槛。>
+    <meta property="og:description" content="Steam Link、Moonlight、Parsec等串流方案设置教程，远程游戏不再有门槛。">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="GameGuideHub">
 </head>
@@ -45,61 +45,57 @@
                 <h1>游戏串流完全指南：随时随地玩PC游戏</h1>
                 <div class="guide-meta">
                     <span>📅 2025-01-25</span>
-                    <span>🏷️ 串流、远。/span>
+                    <span>🏷️ 串流、远程</span>
                     <span>📂 入门指南</span>
                 </div>
                 <div class="guide-body">
-                    
+
 <h2>📡 游戏串流完全指南</h2>
-<p>把你的PC游戏串流到笔记本、手机、平板甚至电视上——这是现代玩家的必备技能。/p>
+<p>把你的PC游戏串流到笔记本、手机、平板甚至电视上——这是现代玩家的必备技能。无论是躺在床上玩3A大作，还是在旅途中继续打副本，串流技术让物理距离不再是障碍。</p>
 
 <h3>主流串流方案对比</h3>
-<table>
-<tr><th>方案</th><th>延迟</th><th>画质</th><th>配置难度</th><th>价格</th></tr>
-<tr><td>Steam Link</td><td>。/td><td>。/td><td>简。/td><td>免费</td></tr>
-<tr><td>Moonlight + Sunshine</td><td>极低</td><td>极好</td><td>中等</td><td>免费</td></tr>
-<tr><td>Parsec</td><td>极低</td><td>极好</td><td>简。/td><td>免费/付费</td></tr>
-<tr><td>GeForce Now</td><td>中等</td><td>。/td><td>简。/td><td>订阅。/td></tr>
-<tr><td>Xbox Cloud Gaming</td><td>中等</td><td>中等</td><td>最简。/td><td>Game Pass</td></tr>
-</table>
+<p>目前市面上主流的串流方案各有优缺点。按照使用场景和配置难度，推荐如下：</p>
+<ul>
+<li><strong>Steam Link</strong>：最简单的入门方案。Steam自带，一键开启。适合局域网内使用，延迟一般，画质基本够用。免费。</li>
+<li><strong>Moonlight + Sunshine</strong>：延迟最低、画质最好的自托管方案。PC端安装Sunshine作为串流服务器，客户端安装Moonlight。局域网延迟通常3-10ms，5G网络下远程串流延迟20-40ms。支持HDR、4K 60fps、环绕声。完全免费。</li>
+<li><strong>Parsec</strong>：延迟表现极佳（局域网3ms以内），但最近更新频率下降。适合低延迟需求较高的玩家。</li>
+<li><strong>GeForce Now</strong>：云游戏方案，不需要本地PC。适合没有游戏PC的玩家，但游戏库有限制。</li>
+<li><strong>Xbox Cloud Gaming</strong>：Xbox云游戏，画质上限1080p 60fps，需要Game Pass Ultimate订阅。</li>
+</ul>
 
 <h3>最佳方案推荐：Moonlight + Sunshine</h3>
-<p>这是目前延迟最低、画质最好的自托管串流方案：</p>
+<p>这是目前综合体验最好的自托管串流方案，下面是详细的配置指南：</p>
 <ul>
-<li>PC端安装Sunshine（开源串流服务器。/li>
-<li>客户端安装Moonlight（支持Windows/Mac/Android/iOS/电视。/li>
-<li>局域网内延迟通常。-10ms。G网络下远程串流延迟0-40ms</li>
-<li>支持HDR。K 60fps、环绕声、多显示。/li>
+<li><strong>PC端</strong>：安装Sunshine（开源串流服务器），在Web管理页面（默认 http://localhost:47990）进行配置。Encoder建议设为NVENC H.264（N卡）或AMF（A卡）。Bitrate设为35000-50000 Kbps。在Applications标签中添加游戏路径。</li>
+<li><strong>客户端</strong>：安装Moonlight客户端（支持Windows/Mac/Android/iOS/电视/Steam Deck），自动发现局域网内的Sunshine服务器。</li>
+<li><strong>编码选择</strong>：优先选HEVC（H.265），同等画质下带宽需求比H.264低30-50%。</li>
+<li><strong>码率设置</strong>：局域网建议50-100Mbps，远程根据主机的上行带宽设置。</li>
+<li><strong>网络要求</strong>：客户端和主机都建议使用有线网络或5GHz Wi-Fi。</li>
 </ul>
 
-<h3>串流优化小技巧/h3>
+<h3>远程串流安全配置</h3>
+<p>远程串流时安全性不容忽视。推荐通过Tailscale或ZeroTier组建虚拟局域网，比端口转发安全一个数量级，且不需要公网IP。Tailscale基于WireGuard加密，配置只需要一步：两台设备都安装Tailscale并登录同一账号。</p>
+
+<h2>📚 深度扩展：进阶串流技巧</h2>
+
+<h3>📱 手机端串流设置技巧</h3>
+<p>Moonlight在手机端的体验取决于正确的触控映射。Android端推荐使用"Gamepad + Touch"模式。iOS 16+系统上PS5和Xbox手柄可以正常工作，连接后在Moonlight中启用"Optimize Gamepad Settings"可以减少蓝牙手柄的输入延迟。对于iPad Pro用户，使用USB-C直连手柄（有线模式）比蓝牙延迟降低30-50%。</p>
+
+<h3>🖥️ 串流客户端设备推荐</h3>
+<p>不同设备的解码能力差异很大。Apple TV 4K和NVIDIA Shield TV Pro是目前最好的串流客户端，支持4K HDR解码，延迟控制优秀。低端安卓盒子解码能力差，不推荐。Steam Deck本身也是一台不错的串流客户端，配合Moonlight可以在掌机上畅玩PC游戏。</p>
+
+<h2>⚠️ 避坑指南：串流配置别踩的坑</h2>
 <ul>
-<li>编码优先选HEVC（H.265），同等画质下带宽需求比H.264。0%</li>
-<li>码率设置：局域网建议50-100Mbps，远程根据上行带宽设置/li>
-<li>使用有线网络连接客户端和主机，Wi-Fi使用5GHz</li>
+<li><strong>Wi-Fi串流忽略干扰</strong>：2.4GHz频段干扰极大，串流必须用5GHz或Wi-Fi 6，且确保客户端和主机都连在5GHz频段上。</li>
+<li><strong>误解带宽概念</strong>：局域网串流的瓶颈通常是Wi-Fi信号质量而非带宽，100Mbps就足够4K串流。</li>
+<li><strong>忽视解码能力</strong>：客户端的解码能力直接决定串流画质。Apple TV和NVIDIA Shield是最好的串流客户端。</li>
+<li><strong>远程串流不设限</strong>：公共Wi-Fi上远程串流会消耗大量流量，4K串流每小时约15-25GB，注意流量限制。</li>
 </ul>
 
-                                        <h2>📚 深度扩展：更多实用技巧/h2>
-<h3>🖥。Sunshine串流服务器配置详。/h3>
-<p>Sunshine是目前最优秀的开源串流服务器，安装后需要在Web管理页面（默认code>http://localhost:47990</code>）进行关键配置。在"Configuration"页面中，。Encoder"设为NVENC H.264（N卡）或AMF（A卡）——NVENC编码延迟最低，A卡AMF的编码质量更佳但延迟略高级分辨率建议设为2560×1440@"60 fps"。Bitrate"设为35000-50000 Kbps。最容易被忽视的不Advanced"选项卡中级QP"值——设置8-22可以在有限带宽内获得最佳画质。别忘了解Applications"标签中添加游戏路径，否则Moonlight客户端只会显示桌面。/p>
-<h3>📱 iOS/Android客户端设置技巧/h3>
-<p>Moonlight在手机端的体验取决于正确的触控映射。在Android端，推荐使用"Gamepad + Touch"模式，将右侧屏幕映射为右摇杆（用于视角控制），左侧为虚拟摇杆（用于移动）。在iOS 16+系统上，PS5和Xbox手柄可以正常工作，连接后在Moonlight中启。Optimize Gamepad Settings"可以减少蓝牙手柄的输入延迟。对于iPad Pro用户，使用USB-C直连手柄（有线模式）比蓝牙延迟降低0-50%，打《APEX英雄》完全没有手感差异。iPhone 15 Pro及以上型号支持通过Thunderbolt接口直连千兆网卡，实现有线串流——延迟可以控制在5ms以内容/p>
-<h3>📶 公网串流安全配置</h3>
-<p>远程串流时安全性不容忽视。Sunshine默认使用自签名SSL证书，建议替换为Let's Encrypt免费证书。不要在路由器上直接暴露Sunshine的端口（47989-47990），而是通过Tailscale或ZeroTier组建虚拟局域网——Tailscale基于WireGuard加密，配置只需要步：两台设备都安装Tailscale并登录相同账号，然后在Moonlight中直接输入Tailscale分配的虚拟IP地址。这套方案比端口转发安全一个数量级，且不需要公网IP。另外，远程串流时建议在Sunshine中设置开机密码验证，防止他人通过Moonlight直接控制你的电脑。/p>
-<h3>🔄 常见串流方案的优缺点排雷</h3>
-<p>GeForce Now。025年的体验有了质的飞跃，但仍有几个硬伤：免费队列等待时间通常15-30分钟、游戏库仅限已购买且支持该平台的游戏（部分发行商如动视暴雪和贝塞斯达的游戏不支持）、没有MOD支持。Xbox Cloud Gaming的优势在于Game Pass库中包含大量首发游戏，但画质最高只。080p 60fps且延迟在30-50ms（受网络影响大）。自建串流中，Steam Link的客户端优化较好（Android TV端支持HDR），但远程串流需要通过Steam自家的网关转发，延迟比Sunshine+Moonlight高约20ms。Parsec在低延迟方面表现最好（局域网3ms以内），但其开发者Focus于企业远程桌面业务后游戏串流的更新频率大幅降低于综合来看，自用推荐Sunshine+Moonlight、跨平台推荐Parsec、不折腾推荐Steam Link。/p>
-
-                    <h2>⚠️ 避坑指南：串流配置别踩的。/h2>
-<ul>
-<li><strong>Wi-Fi串流忽略干扰。/strong>2.4GHz频段干扰极大，串流必须用5GHz或Wi-Fi 6，且确保客户端和主机都连5GHz。/li>
-<li><strong>误解"带宽"概念。/strong>局域网串流瓶颈通常是Wi-Fi信号质量而非带宽。00Mbps就足。K串流。/li>
-<li><strong>忽视解码能力。/strong>客户端解码能力决定串流画质。Apple TV/NVIDIA Shield是最好的串流客户端，低端安卓盒子解码能力差。/li>
-<li><strong>远程串流不设限：</strong>公共Wi-Fi上远程串流会消耗大量流量，注意流量限制作K串流每小时约15-25GB。/li>
-</ul>
                 </div>
                 <hr style="margin:40px 0; border-color:rgba(255,255,255,0.06);">
                 <p style="text-align:center;color:#5a6270;">
-                    📖 <a href="../../all-guides.html">返回全部攻略</a> &nbsp;|&nbsp; 
+                    📖 <a href="../../all-guides.html">返回全部攻略</a> &nbsp;|&nbsp;
                     📂 <a href="../../all-guides.html?cat=beginner">查看入门指南攻略</a>
                 </p>
             </article>
@@ -114,7 +110,7 @@
                     <p>全球热门游戏攻略大全，一站式查阅所有游戏技巧与攻略。</p>
                 </div>
                 <div class="footer-col">
-                    <h4>快速导。/h4>
+                    <h4>快速导航</h4>
                     <a href="../../index.html">首页</a>
                     <a href="../../categories.html">攻略分类</a>
                     <a href="../../all-guides.html">全部攻略</a>
@@ -123,13 +119,13 @@
                     <h4>热门分类</h4>
                     <a href="../../all-guides.html?cat=rpg">RPG攻略</a>
                     <a href="../../all-guides.html?cat=fps">FPS攻略</a>
-                    <a href="../../all-guides.html?cat=openworld">开放世界/a>
+                    <a href="../../all-guides.html?cat=openworld">开放世界</a>
                     <a href="../../all-guides.html?cat=beginner">入门指南</a>
                 </div>
                 <div class="footer-col">
                     <h4>关于</h4>
                     <a href="../../about.html">关于本站</a>
-                    <p class="footer-note">攻略内容AI 精心生成<br>仅供参考学习用。/p>
+                    <p class="footer-note">攻略内容AI精心生成<br>仅供参考学习用。</p>
                 </div>
             </div>
             <div class="footer-bottom">
